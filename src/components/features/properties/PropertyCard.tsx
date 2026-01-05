@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 import { Card } from '../../ui/Card';
@@ -10,7 +9,6 @@ interface PropertyCardProps {
 }
 
 export default function PropertyCard({ property }: PropertyCardProps) {
-  const visaSafetyBars = Math.round(property.visaSafetyScore);
 
   return (
     <Card hover className="overflow-hidden">

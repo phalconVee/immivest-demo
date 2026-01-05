@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Sidebar } from '../components/layout/Sidebar';
 import { Header } from '../components/layout/Header';
-import { Card } from '../components/ui/Card';
 import { mockProperties } from '../data/mockProperties';
 import { useUser } from '../context/UserContext';
 import PropertyCard from '../components/features/properties/PropertyCard';
-import { formatCurrency } from '../utils/formatters';
-import { X } from 'lucide-react';
 import AIConcierge from '../components/features/chat/AIConcierge';
 
 export default function Properties() {

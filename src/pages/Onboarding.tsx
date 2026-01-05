@@ -1,12 +1,9 @@
-import React from 'react';
 import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { Button } from '../components/ui/Button';
 import VisaStep from '../components/features/onboarding/VisaStep';
 import FinancialStep from '../components/features/onboarding/FinancialStep';
 import CreditStep from '../components/features/onboarding/CreditStep';
 import ResultsStep from '../components/features/onboarding/ResultsStep';
-import { useUser } from '../context/UserContext';
 
 const steps = [
   { path: 'visa', label: 'Visa Info', component: VisaStep },
@@ -18,7 +15,6 @@ const steps = [
 export default function Onboarding() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { user } = useUser();
 
   const currentStepIndex = steps.findIndex(
     step => location.pathname.includes(step.path)

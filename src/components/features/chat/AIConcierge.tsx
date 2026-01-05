@@ -1,7 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Send, Bot, User } from 'lucide-react';
-import { Card } from '../../ui/Card';
-import { Button } from '../../ui/Button';
+import { useState, useRef, useEffect } from 'react';
+import { MessageSquare, X, Send, Bot } from 'lucide-react';
 
 interface Message {
   id: string;

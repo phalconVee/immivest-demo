@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { Input, Select, Button } from '../../ui';
 import { useUser } from '../../../context/UserContext';
 import { Card } from '../../ui/Card';
-import { formatCurrency } from '../../../utils/formatters';
 
 const creditScoreRanges = [
   { value: '<600', label: '<600' },

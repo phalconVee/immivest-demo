@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Sidebar } from '../components/layout/Sidebar';
 import { Header } from '../components/layout/Header';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { mockProperties } from '../data/mockProperties';
-import { formatCurrency, formatDate } from '../utils/formatters';
-import { CheckCircle, Circle, FileText, Calendar, DollarSign, Home } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { formatCurrency } from '../utils/formatters';
+import { CheckCircle, FileText, DollarSign, Home, Calendar } from 'lucide-react';
 import AIConcierge from '../components/features/chat/AIConcierge';
 
 const steps = [
